@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Habit Tracker</h1>
+        <form id="habit-form">
+            <input type="text" id="habit-input" placeholder="Add a new habit" required>
+            <button type="submit">Add Habit</button>
+        </form>
+        <ul id="habit-list"></ul>
+
+        <div id="calendar">
+            <h2>Habit Calendar</h2>
+            <div class="calendar-grid" id="calendar-grid"></div>
+        </div>
+
+        <div id="streak">
+            <h2>Daily Streak</h2>
+            <p id="streak-count">Streak: 0 days</p>
+        </div>
+
+        <button id="reset-button">Reset Tracker</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
